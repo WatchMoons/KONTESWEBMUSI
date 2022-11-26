@@ -1,0 +1,83 @@
+header {
+  width: 100%;
+  font-weight: 600;
+  background-image: url("../../images/ssssa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  padding: 5px;
+}
+header p.a,
+header p.b {
+  margin: 0;
+  font-weight: bold;
+  font-family: "poppins", "Times New Roman";
+  padding-left: 40px;
+}
+header p.a {
+  padding-top: 10px;
+  font-size: 12px;
+}
+header p.b {
+  font-size: 15px;
+}
+.navbar-fixed-top {
+  margin: 0;
+  font-family: "poppins", "Times New Roman";
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-fixed-top.scrolled {
+  font-family: "poppins", "Times New Roman";
+  background: rgba(0, 0, 0, 0.05);
+  color: white;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 0;
+  z-index: 1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  ul a {
+    color: rgb(184, 183, 183);
+    &:hover {
+      color: white;
+    }
+  }
+  .active {
+    color: rgb(255, 255, 255) !important;
+  }
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-image: url("../../images/dark\ 12.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.7;
+  }
+}
